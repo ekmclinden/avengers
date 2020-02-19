@@ -1,20 +1,28 @@
+var add = function(number1, number2) {
+  return number1 + number2;
+};
+
+var subtract = function(number1, number2) {
+  return number1 - number2;
+};
+
+var multiply = function(number1, number2) {
+  return number1 * number2;
+};
+
+var divide = function(number1, number2) {
+  return number1 / number2;
+};
+
 $(document).ready(function() {
-  $("form#insurance").submit(function(event) {
-    var age = parseInt($("input#age").val());
-    var gender = $("select#gender").val();
-
-    if (age) {
-      var quote = (100 - age) * 3; 
-      if (gender === 'male' && age < 26) {
-        quote += 50;
-      }
-
-      $("#rate").empty().append(quote);
-      $("#quote").show();
-    } else {
-      alert('Please enter your age.');
-    }
-
+  $("form#add").submit(function(event) {
     event.preventDefault();
-  });
+    var number1 = parseInt($("#add1").val());
+    var number2 = parseInt($("#add2").val());
+    var result = add(number1, number2);
+    $("#output").text(result);
+if (result >= 2) {
+  $("#drinks").show();
+}
+});
 });
