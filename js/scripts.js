@@ -20,9 +20,14 @@ $(document).ready(function() {
     var number1 = parseInt($("#add1").val());
     var number2 = parseInt($("#add2").val());
     var result = add(number1, number2);
-    $("#output").text(result);
-if (result >= 2) {
-  $("#drinks").show();
+   
+if (result <= 6) {
+  $("#mcdonalds").hide();
+  $("#home").show();
+}
+  if (result > 6) {
+    $("#home").hide();
+    $("#mcdonalds").show();
 }
 });
 });
