@@ -9,11 +9,11 @@ $(document).ready(function() {
     var number2 = parseInt($("#add2").val());
     var number3 = parseInt($("#add2").val());
     var result = add(number1, number2, number3);
+    if (number1 || number2 || number3===0) {
+      $('.warning').show()
+    }
     $("#output").text(result); 
 
-if (number1===0) {
-  $(".warning").show();
-}
 if (result < 4) {
   $("#mcdonalds").hide();
   $("#home").show();
