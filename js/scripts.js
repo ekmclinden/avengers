@@ -11,11 +11,13 @@ $(document).ready(function() {
     var result = add(number1, number2, number3);
     if ((number1 > 0) && ( number2 > 0) && (number3 > 0)) {
       $("#output").text(result); 
-    } else if ((6>= number1) && (6>= number2) && (6>= number3)) {
-      alert ("i'm sad you didn't follow my 1-5 instructions :("); 
-     $("#cheater").show();
     } else { 
       alert ("you seriously couldn't fill in 3 boxes?? try again, slacker");
+    }
+    if ((6 > number1 > 0) && (6 > number2 > 0) && (6> number3 > 0)){
+      $("#cheater").hide();
+    } else {
+      $("#cheater").show();
     }
   }); 
 }); 
