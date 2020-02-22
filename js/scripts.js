@@ -12,13 +12,22 @@ $(document).ready(function() {
     if ((number1 > 0) && ( number2 > 0) && (number3 > 0)) {
       $("#output").text(result); 
     } else { 
-      alert ("you seriously couldn't fill in 3 boxes?? try again, slacker");
+      alert ("you seriously couldn't fill in 3 boxes?? AHHHHH. Fix it");
     }
     if ((6 > number1 > 0) && (6 > number2 > 0) && (6> number3 > 0)){
       $(".warning2").hide();
     } else {
       $(".warning2").show();
-
+    }
+    if (result < 6) {
+      $("#thor").show();
+      $("#cap").hide();
+      $("#hulk").hide();
+    }
+    if (11 > result && result > 6) {
+      $("#thor").hide();
+      $("#cap").show();
+      $("#hulk").hide();
     }
   }); 
 }); 
