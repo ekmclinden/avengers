@@ -24,10 +24,15 @@ $(document).ready(function() {
       $("#cap").hide();
       $("#hulk").hide();
     }
-    if (11 > result && result > 6) {
+    if (10 > result && result > 6) {
       $("#thor").hide();
       $("#cap").show();
       $("#hulk").hide();
+    }
+    if (result > 11) {
+      $("#thor").hide();
+      $("#cap").hide();
+      $("#hulk").show();
     }
   }); 
 }); 
