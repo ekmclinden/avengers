@@ -15,9 +15,10 @@ $(document).ready(function() {
       alert ("you seriously couldn't fill in 3 boxes?? try again, slacker");
     }
     if ((6 > number1 > 0) && (6 > number2 > 0) && (6> number3 > 0)){
-      $("#cheater").hide();
+      $(".warning2").hide();
     } else {
-      $("#cheater").show();
+      $(".warning2").show();
+
     }
   }); 
 }); 

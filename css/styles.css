@@ -8,11 +8,12 @@
   display: none;
 }
 .warning {
-  color: red;
+
   display: none;
 }
 .warning2 {
   display: none;
+  color: red;
 }
 #cheater {
   display: none;
