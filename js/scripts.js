@@ -14,25 +14,13 @@ $(document).ready(function() {
     } else { 
       alert ("you seriously couldn't fill in 3 boxes?? AHHHHH. Fix it");
     }
-    if ((6 > number1 > 0) && (6 > number2 > 0) && (6> number3 > 0)){
-      $(".warning2").hide();
-    } else {
-      $(".warning2").show();
-    }
-    if (result < 6) {
+    if ( 6>= result) {
       $("#thor").show();
       $("#cap").hide();
-      $("#hulk").hide();
     }
-    if (10 > result && result > 6) {
-      $("#thor").hide();
+    if (10 > result && result >= 7) {
       $("#cap").show();
-      $("#hulk").hide();
-    }
-    if (result > 11) {
       $("#thor").hide();
-      $("#cap").hide();
-      $("#hulk").show();
     }
   }); 
 }); 
