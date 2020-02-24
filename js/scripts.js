@@ -10,17 +10,29 @@ $(document).ready(function() {
     var number3 = parseInt($("#add3").val());
     var result = add(number1, number2, number3);
     if ((number1 > 0) && ( number2 > 0) && (number3 > 0)) {
-      $("#output").text(result); 
     } else { 
       alert ("you seriously couldn't fill in 3 boxes?? AHHHHH. Fix it");
     }
     if ( 6>= result) {
       $("#thor").show();
       $("#cap").hide();
+      $("#hulk").hide();
     }
     if (10 > result && result >= 7) {
       $("#cap").show();
       $("#thor").hide();
+      $("#hulk").hide();
+    }
+    if (11 <= result ) {
+      $("#hulk").show();
+      $("#thor").hide();
+      $("#cap").hide();
+    }
+      if (number1 <= 0 || number1 >= 6) {
+        alert ("i'm sorry... is that number 1-5?? follow the RULES");
+        $("#cap").hide();
+        $("#thor").hide();
+        $("#hulk").hide();
     }
   }); 
 }); 
