@@ -8,7 +8,7 @@
 
 https://ekmclinden.github.io/avengers/
 
-This webpage demonstrates ability to use HTML, CSS, Bootstrap, Jquery, and Javascript
+This webpage demonstrates ability to use HTML, CSS, Bootstrap, jQuery, and Javascript
 
 ## Setup/Installation Requirements
 
