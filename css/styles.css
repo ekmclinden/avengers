@@ -1,11 +1,19 @@
+ #header {
+  text-align: center;
+  color: darkblue
+}
+
 #thor {
   display: none;
+  color: darkred;
 }
 #cap {
   display: none;
+  color: darkblue;
 }
 #hulk {
   display: none;
+  color: darkgreen
 }
 .warning {
 

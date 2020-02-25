@@ -14,18 +14,21 @@ $(document).ready(function() {
          $("#cap").hide();
          $("#thor").hide();
          $("#hulk").hide();
+         $(".warning2").hide();
       }
       if( !$('#add2').val() ) {
         alert("did you think I'd let you submit this without everything being complete?? THINK AGAIN!!");
         $("#cap").hide();
         $("#thor").hide();
         $("#hulk").hide();
+        $(".warning2").hide();
      }
      if( !$('#add3').val() ) {
       alert("did you think I'd let you submit this without everything being complete?? THINK AGAIN!!"); 
       $("#cap").hide();
       $("#thor").hide();
       $("#hulk").hide();
+      $(".warning2").hide();
    }
     if ( 6>= result) {
       $("#thor").show();
