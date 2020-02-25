@@ -23,6 +23,7 @@
   display: none;
   color: red;
 }
-#cheater {
+.warning1 {
   display: none;
+  color: green
 }
