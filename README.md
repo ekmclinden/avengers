@@ -17,7 +17,7 @@ This webpage demonstrates ability to use HTML, CSS, Bootstrap, jQuery, and Javas
 ## Known Bugs
 
 * Most likely formatting errors.
-* Noticed a slight lag on GitHub pages. Refresh page if not loading. 
+* if you get a 17/18 value as your first try, nothing happens. need to edit code to include => on my comparisons. 
 
 
 ## Technologies Used
